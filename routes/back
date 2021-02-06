@@ -1,0 +1,24 @@
+
+if(rows.length == 0){
+                   newDir(`${dirtory}/uploads/${category}`);
+                }
+                if(array.length > 0){
+                    for(let i=0;i<array.length;i++){
+                        array[i].mv(`${dirtory}/uploads/${category}/${array[i].name}`)
+                        const qr3 = `INSERT INTO image_datas VALUES('${null}','${category}','${array[i].name}')`
+                        databases.query(qr3, (req, rows, fields)=>{
+                            console.log(rows);
+                            console.log("#",i,"Uploaded", array[i].name, 'in', category)
+                        })
+                    }
+                    const qr2 = `INSERT INTO image_list VALUES('${null}','${category}','${array[0].name}')`;
+                    databases.query(qr2,(req, rows, fields)=>{
+                        res.render('upload');
+                    })
+                }else{
+                    array.mv(`${dirtory}/uploads/${category}/${array.name}`)
+                    const qr4 = `INSERT INTO image_datas VALUES('${null}','${category}','${array.name}')`
+                    databases.query(qr4, (req, rows, fields)=>{
+                        res.render('upload');
+                    })
+                }

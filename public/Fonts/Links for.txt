@@ -1,0 +1,4 @@
+@font-face {font-family: 'BravAda-Arma-Regular';src:url('BravAda-Arma-Regular.ttf.woff') format('woff'),url('BravAda-Arma-Regular.ttf.svg#BravAda-Arma-Regular') format('svg'),url('BravAda-Arma-Regular.ttf.eot'),url('BravAda-Arma-Regular.ttf.eot?#iefix') format('embedded-opentype'); font-weight: normal;font-style: normal;}
+h1 { 
+   font-family: 'BravAda-Arma-Regular';
+}  

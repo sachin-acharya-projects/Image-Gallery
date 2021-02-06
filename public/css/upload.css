@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Allan&family=Anton&family=Courgette&family=Kalam&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital@0;1&family=Oswald&family=Pathway+Gothic+One&family=Playball&family=Righteous&family=Roboto&family=Squada+One&family=Teko&family=Trade+Winds&family=Yanone+Kaffeesatz&family=Yellowtail&display=swap");
+@font-face {
+  font-family: 'BravAda-Arma-Regular';
+  src: url("/fonts/BravAda-Arma-Regular.ttf.woff") format("woff"), url("/fonts/BravAda-Arma-Regular.ttf.svg#BravAda-Arma-Regular") format("svg"), url("/fonts/BravAda-Arma-Regular.ttf.eot"), url("/fonts/BravAda-Arma-Regular.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: url("/assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+nav .logo {
+  display: block;
+  width: 80%;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "BravAda-Arma-Regular";
+  font-weight: 400;
+  font-size: 32px;
+  padding-left: 20px;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #020202c2;
+  line-height: 35px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 10px;
+  position: relative;
+}
+
+nav form input {
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: rgba(56, 56, 56, 0.6);
+  border: 1px solid rgba(0, 102, 255, 0.3);
+}
+
+nav form input::-webkit-input-placeholder {
+  color: rgba(56, 56, 56, 0.6);
+}
+
+nav form input:-ms-input-placeholder {
+  color: rgba(56, 56, 56, 0.6);
+}
+
+nav form input::-ms-input-placeholder {
+  color: rgba(56, 56, 56, 0.6);
+}
+
+nav form input::placeholder {
+  color: rgba(56, 56, 56, 0.6);
+}
+
+nav form i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
+  color: rgba(56, 56, 56, 0.6);
+}
+
+nav .menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0px 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .menus li {
+  list-style: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+nav .menus li a {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: normal;
+  text-shadow: 0 0 20px #2c2a2a;
+  position: relative;
+  -webkit-transition: 0.4s all linear;
+  transition: 0.4s all linear;
+}
+
+nav .menus li a::after {
+  content: "";
+  height: 2px;
+  background: tomato;
+  width: 0%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transition: 0.4s all linear;
+  transition: 0.4s all linear;
+}
+
+nav .menus li a:hover {
+  color: tomato;
+}
+
+nav .menus li a:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+nav .menus li:nth-last-of-type(1) {
+  width: 100px;
+}
+
+nav .menus li:nth-last-of-type(1) a {
+  width: 50px;
+}
+
+nav .menus li:nth-last-of-type(2) {
+  width: 100px;
+}
+
+nav .menus li:nth-last-of-type(2) a {
+  width: 55px;
+}
+
+.setAccounts {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.setAccounts form {
+  background: rgba(255, 255, 255, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  width: 350px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.setAccounts form div {
+  height: 100%;
+  width: 100%;
+  margin: 7px 0px 0px 0px;
+}
+
+.setAccounts form div input, .setAccounts form div p {
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  font-family: sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 5px #fff;
+  -webkit-transition: 0.6s all linear;
+  transition: 0.6s all linear;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  text-transform: capitalize;
+  cursor: text;
+}
+
+.setAccounts form div input::-webkit-input-placeholder, .setAccounts form div p::-webkit-input-placeholder {
+  text-shadow: none;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.setAccounts form div input:-ms-input-placeholder, .setAccounts form div p:-ms-input-placeholder {
+  text-shadow: none;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.setAccounts form div input::-ms-input-placeholder, .setAccounts form div p::-ms-input-placeholder {
+  text-shadow: none;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.setAccounts form div input::placeholder, .setAccounts form div p::placeholder {
+  text-shadow: none;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.setAccounts form div input:hover, .setAccounts form div input:focus, .setAccounts form div p:hover, .setAccounts form div p:focus {
+  color: white;
+  border-color: orangered;
+  background: rgba(255, 69, 0, 0.2);
+}
+
+.setAccounts form div input.login_send, .setAccounts form div p.login_send {
+  cursor: pointer;
+  -webkit-transition: 0.6s all linear;
+  transition: 0.6s all linear;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  cursor: pointer !important;
+}
+
+p {
+  cursor: pointer !important;
+  font-size: 13px !important;
+  text-transform: none !important;
+}
+/*# sourceMappingURL=upload.css.map */

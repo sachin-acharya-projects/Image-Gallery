@@ -1,0 +1,17 @@
+{
+  "name": "image-gallery",
+  "version": "1.0.0",
+  "description": "This is Application/Web Image Gallery containing Various of Celeb Pictures",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Sachin Acharya",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "mysql": "^2.18.1"
+  }
+}
